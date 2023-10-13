@@ -14,7 +14,7 @@ const Home = () => {
         dispatch(getUsers())
     },[])
 
-    const {loading, users, error} = useAppSelector((store)=> store.users)
+    const {loading, users} = useAppSelector((store)=> store.users)
     // console.log(loading, users, error)
 
     const [savedUsers, setSavedUsers] = useState<UserType[] | object[]>([])
